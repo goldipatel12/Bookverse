@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 func CmdCreateMarket() *cobra.Command {

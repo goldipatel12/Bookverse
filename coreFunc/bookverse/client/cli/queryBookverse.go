@@ -6,7 +6,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 	"github.com/spf13/cobra"
 )
 

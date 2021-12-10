@@ -5,7 +5,7 @@ package goldipatel12.marketplace.Bookverses;
 import "Bookverses/market.proto";
 import "Bookverses/Bookverse.proto";
 
-option go_package = "github.com/goldipatel12/marketplace/x/Bookverses/types";
+option go_package = "github.com/goldipatel12/marketplacecoreFuncBookverses/types";
 
 // Msg defines the Msg service.
 service Msg {

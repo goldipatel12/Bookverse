@@ -3,7 +3,7 @@ package goldipatel12.marketplace.marketplace;
 
 // this line is used by starport scaffolding # proto/tx/import
 
-option go_package = "github.com/goldipatel12/marketplace/x/marketplace/types";
+option go_package = "github.com/goldipatel12/marketplacecoreFuncmarketplace/types";
 
 // Msg defines the Msg service.
 service Msg {

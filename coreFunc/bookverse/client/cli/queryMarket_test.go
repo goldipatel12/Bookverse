@@ -13,8 +13,8 @@ import (
 	"google.golang.org/grpc/status"
 
 	"github.com/goldipatel12/marketplace/testutil/network"
-	"github.com/goldipatel12/marketplace/x/Bookverses/client/cli"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/client/cli"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 func networkWithMarketObjects(t *testing.T, n int) (*network.Network, []*types.Market) {

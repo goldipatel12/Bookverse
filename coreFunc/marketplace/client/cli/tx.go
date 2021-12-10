@@ -8,7 +8,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/goldipatel12/marketplace/x/marketplace/types"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/types"
 )
 
 var (

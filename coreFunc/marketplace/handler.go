@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/goldipatel12/marketplace/x/marketplace/keeper"
-	"github.com/goldipatel12/marketplace/x/marketplace/types"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/keeper"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/types"
 )
 
 // NewHandler ...

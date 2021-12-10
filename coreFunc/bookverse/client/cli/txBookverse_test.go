@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/goldipatel12/marketplace/testutil/network"
-	"github.com/goldipatel12/marketplace/x/Bookverses/client/cli"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/client/cli"
 )
 
 func TestCreateBookverse(t *testing.T) {

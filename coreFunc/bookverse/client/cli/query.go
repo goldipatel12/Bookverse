@@ -10,7 +10,7 @@ import (
 	// "github.com/cosmos/cosmos-sdk/client/flags"
 	// sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/goldipatel12/marketplace/x/marketplace/types"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/types"
 )
 
 type msgServer struct {

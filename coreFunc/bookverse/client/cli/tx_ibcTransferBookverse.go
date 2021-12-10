@@ -8,8 +8,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/client/tx"
-	channelutils "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/client/utils"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	channelutils "github.com/cosmos/cosmos-sdkcoreFuncibc/core/04-channel/client/utils"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 var _ = strconv.Itoa(0)

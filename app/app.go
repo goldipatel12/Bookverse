@@ -25,73 +25,73 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/capability"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	"github.com/cosmos/cosmos-sdk/x/crisis"
-	crisiskeeper "github.com/cosmos/cosmos-sdk/x/crisis/keeper"
-	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	distrclient "github.com/cosmos/cosmos-sdk/x/distribution/client"
-	distrkeeper "github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/evidence"
-	evidencekeeper "github.com/cosmos/cosmos-sdk/x/evidence/keeper"
-	evidencetypes "github.com/cosmos/cosmos-sdk/x/evidence/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
-	govkeeper "github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	transfer "github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer"
-	ibctransferkeeper "github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/keeper"
-	ibctransfertypes "github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
-	ibc "github.com/cosmos/cosmos-sdk/x/ibc/core"
-	ibcclient "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client"
-	porttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	ibchost "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	ibckeeper "github.com/cosmos/cosmos-sdk/x/ibc/core/keeper"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	mintkeeper "github.com/cosmos/cosmos-sdk/x/mint/keeper"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	paramsclient "github.com/cosmos/cosmos-sdk/x/params/client"
-	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
-	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	paramproposal "github.com/cosmos/cosmos-sdk/x/params/types/proposal"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/cosmos/cosmos-sdk/x/upgrade"
-	upgradeclient "github.com/cosmos/cosmos-sdk/x/upgrade/client"
-	upgradekeeper "github.com/cosmos/cosmos-sdk/x/upgrade/keeper"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/cosmos/cosmos-sdk//auth"
+	"github.com/cosmos/cosmos-sdk//auth/ante"
+	authrest "github.com/cosmos/cosmos-sdk//auth/client/rest"
+	authkeeper "github.com/cosmos/cosmos-sdk//auth/keeper"
+	autht "github.com/cosmos/cosmos-sdk//auth/t"
+	authtypes "github.com/cosmos/cosmos-sdk//auth/types"
+	"github.com/cosmos/cosmos-sdk//auth/vesting"
+	"github.com/cosmos/cosmos-sdk//bank"
+	bankkeeper "github.com/cosmos/cosmos-sdk//bank/keeper"
+	banktypes "github.com/cosmos/cosmos-sdk//bank/types"
+	"github.com/cosmos/cosmos-sdk//capability"
+	capabilitykeeper "github.com/cosmos/cosmos-sdk//capability/keeper"
+	capabilitytypes "github.com/cosmos/cosmos-sdk//capability/types"
+	"github.com/cosmos/cosmos-sdk//crisis"
+	crisiskeeper "github.com/cosmos/cosmos-sdk//crisis/keeper"
+	crisistypes "github.com/cosmos/cosmos-sdk//crisis/types"
+	distr "github.com/cosmos/cosmos-sdk//distribution"
+	distrclient "github.com/cosmos/cosmos-sdk//distribution/client"
+	distrkeeper "github.com/cosmos/cosmos-sdk//distribution/keeper"
+	distrtypes "github.com/cosmos/cosmos-sdk//distribution/types"
+	"github.com/cosmos/cosmos-sdk//evidence"
+	evidencekeeper "github.com/cosmos/cosmos-sdk//evidence/keeper"
+	evidencetypes "github.com/cosmos/cosmos-sdk//evidence/types"
+	"github.com/cosmos/cosmos-sdk//genutil"
+	genutiltypes "github.com/cosmos/cosmos-sdk//genutil/types"
+	"github.com/cosmos/cosmos-sdk//gov"
+	govclient "github.com/cosmos/cosmos-sdk//gov/client"
+	govkeeper "github.com/cosmos/cosmos-sdk//gov/keeper"
+	govtypes "github.com/cosmos/cosmos-sdk//gov/types"
+	transfer "github.com/cosmos/cosmos-sdk//ibc/applications/transfer"
+	ibctransferkeeper "github.com/cosmos/cosmos-sdk//ibc/applications/transfer/keeper"
+	ibctransfertypes "github.com/cosmos/cosmos-sdk//ibc/applications/transfer/types"
+	ibc "github.com/cosmos/cosmos-sdk//ibc/core"
+	ibcclient "github.com/cosmos/cosmos-sdk//ibc/core/02-client"
+	porttypes "github.com/cosmos/cosmos-sdk//ibc/core/05-port/types"
+	ibchost "github.com/cosmos/cosmos-sdk//ibc/core/24-host"
+	ibckeeper "github.com/cosmos/cosmos-sdk//ibc/core/keeper"
+	"github.com/cosmos/cosmos-sdk//mint"
+	mintkeeper "github.com/cosmos/cosmos-sdk//mint/keeper"
+	minttypes "github.com/cosmos/cosmos-sdk//mint/types"
+	"github.com/cosmos/cosmos-sdk//params"
+	paramsclient "github.com/cosmos/cosmos-sdk//params/client"
+	paramskeeper "github.com/cosmos/cosmos-sdk//params/keeper"
+	paramstypes "github.com/cosmos/cosmos-sdk//params/types"
+	paramproposal "github.com/cosmos/cosmos-sdk//params/types/proposal"
+	"github.com/cosmos/cosmos-sdk//slashing"
+	slashingkeeper "github.com/cosmos/cosmos-sdk//slashing/keeper"
+	slashingtypes "github.com/cosmos/cosmos-sdk//slashing/types"
+	"github.com/cosmos/cosmos-sdk//staking"
+	stakingkeeper "github.com/cosmos/cosmos-sdk//staking/keeper"
+	stakingtypes "github.com/cosmos/cosmos-sdk//staking/types"
+	"github.com/cosmos/cosmos-sdk//upgrade"
+	upgradeclient "github.com/cosmos/cosmos-sdk//upgrade/client"
+	upgradekeeper "github.com/cosmos/cosmos-sdk//upgrade/keeper"
+	upgradetypes "github.com/cosmos/cosmos-sdk//upgrade/types"
 	appparams "github.com/kryptopoo/marketplace/app/params"
 	"github.com/kryptopoo/marketplace/docs"
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	// this line is used by starport scaffolding # stargate/app/moduleImport
-	"github.com/kryptopoo/marketplace/x/marketplace"
-	marketplacekeeper "github.com/kryptopoo/marketplace/x/marketplace/keeper"
-	marketplacetypes "github.com/kryptopoo/marketplace/x/marketplace/types"
-	"github.com/kryptopoo/marketplace/x/Bookverses"
-	Bookverseskeeper "github.com/kryptopoo/marketplace/x/Bookverses/keeper"
-	Bookversestypes "github.com/kryptopoo/marketplace/x/Bookverses/types"
+	"github.com/kryptopoo/marketplace//marketplace"
+	marketplacekeeper "github.com/kryptopoo/marketplace//marketplace/keeper"
+	marketplacetypes "github.com/kryptopoo/marketplace//marketplace/types"
+	"github.com/kryptopoo/marketplace//Bookverses"
+	Bookverseskeeper "github.com/kryptopoo/marketplace//Bookverses/keeper"
+	Bookversestypes "github.com/kryptopoo/marketplace//Bookverses/types"
 )
 
 const Name = "marketplace"
@@ -168,8 +168,8 @@ func init() {
 	DefaultNodeHome = filepath.Join(userHomeDir, "."+Name)
 }
 
-// App extends an ABCI application, but with most of its parameters exported.
-// They are exported for convenience in creating helper functions, as object
+// App etends an ABCI application, but with most of its parameters eported.
+// They are eported for convenience in creating helper functions, as object
 // capabilities aren't needed for testing.
 type App struct {
 	*baseapp.BaseApp
@@ -228,7 +228,7 @@ func New(
 	cdc := encodingConfig.Amino
 	interfaceRegistry := encodingConfig.InterfaceRegistry
 
-	bApp := baseapp.NewBaseApp(Name, logger, db, encodingConfig.TxConfig.TxDecoder(), baseAppOptions...)
+	bApp := baseapp.NewBaseApp(Name, logger, db, encodingConfig.TConfig.TDecoder(), baseAppOptions...)
 	bApp.SetCommitMultiStoreTracer(traceStore)
 	bApp.SetAppVersion(version.Version)
 	bApp.SetInterfaceRegistry(interfaceRegistry)
@@ -367,7 +367,7 @@ func New(
 	/****  Module Options ****/
 
 	// NOTE: we may consider parsing `appOpts` inside module constructors. For the moment
-	// we prefer to be more strict in what arguments the modules expect.
+	// we prefer to be more strict in what arguments the modules epect.
 	var skipGenesisInvariants = cast.ToBool(appOpts.Get(crisis.FlagSkipGenesisInvariants))
 
 	// NOTE: Any module instantiated in the module manager that is later modified
@@ -375,8 +375,8 @@ func New(
 
 	app.mm = module.NewManager(
 		genutil.NewAppModule(
-			app.AccountKeeper, app.StakingKeeper, app.BaseApp.DeliverTx,
-			encodingConfig.TxConfig,
+			app.AccountKeeper, app.StakingKeeper, app.BaseApp.DeliverT,
+			encodingConfig.TConfig,
 		),
 		auth.NewAppModule(appCodec, app.AccountKeeper, nil),
 		vesting.NewAppModule(app.AccountKeeper, app.BankKeeper),
@@ -448,14 +448,14 @@ func New(
 	app.SetAnteHandler(
 		ante.NewAnteHandler(
 			app.AccountKeeper, app.BankKeeper, ante.DefaultSigVerificationGasConsumer,
-			encodingConfig.TxConfig.SignModeHandler(),
+			encodingConfig.TConfig.SignModeHandler(),
 		),
 	)
 	app.SetEndBlocker(app.EndBlocker)
 
 	if loadLatest {
 		if err := app.LoadLatestVersion(); err != nil {
-			tmos.Exit(err.Error())
+			tmos.Eit(err.Error())
 		}
 
 		// Initialize and seal the capability keeper so all persistent capabilities
@@ -465,8 +465,8 @@ func New(
 		// that in-memory capabilities get regenerated on app restart.
 		// Note that since this reads from the store, we can only perform it when
 		// `loadLatest` is set to true.
-		ctx := app.BaseApp.NewUncachedContext(true, tmproto.Header{})
-		app.CapabilityKeeper.InitializeAndSeal(ctx)
+		ct := app.BaseApp.NewUncachedContet(true, tmproto.Header{})
+		app.CapabilityKeeper.InitializeAndSeal(ct)
 	}
 
 	app.ScopedIBCKeeper = scopedIBCKeeper
@@ -480,22 +480,22 @@ func New(
 func (app *App) Name() string { return app.BaseApp.Name() }
 
 // BeginBlocker application updates every begin block
-func (app *App) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
-	return app.mm.BeginBlock(ctx, req)
+func (app *App) BeginBlocker(ct sdk.Contet, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
+	return app.mm.BeginBlock(ct, req)
 }
 
 // EndBlocker application updates every end block
-func (app *App) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
-	return app.mm.EndBlock(ctx, req)
+func (app *App) EndBlocker(ct sdk.Contet, req abci.RequestEndBlock) abci.ResponseEndBlock {
+	return app.mm.EndBlock(ct, req)
 }
 
 // InitChainer application update at chain initialization
-func (app *App) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
+func (app *App) InitChainer(ct sdk.Contet, req abci.RequestInitChain) abci.ResponseInitChain {
 	var genesisState GenesisState
 	if err := tmjson.Unmarshal(req.AppStateBytes, &genesisState); err != nil {
 		panic(err)
 	}
-	return app.mm.InitGenesis(ctx, app.appCodec, genesisState)
+	return app.mm.InitGenesis(ct, app.appCodec, genesisState)
 }
 
 // LoadHeight loads a particular height
@@ -566,32 +566,32 @@ func (app *App) GetSubspace(moduleName string) paramstypes.Subspace {
 // RegisterAPIRoutes registers all application module routes with the provided
 // API server.
 func (app *App) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
-	clientCtx := apiSvr.ClientCtx
-	rpc.RegisterRoutes(clientCtx, apiSvr.Router)
-	// Register legacy tx routes.
-	authrest.RegisterTxRoutes(clientCtx, apiSvr.Router)
-	// Register new tx routes from grpc-gateway.
-	authtx.RegisterGRPCGatewayRoutes(clientCtx, apiSvr.GRPCGatewayRouter)
+	clientCt := apiSvr.ClientCt
+	rpc.RegisterRoutes(clientCt, apiSvr.Router)
+	// Register legacy t routes.
+	authrest.RegisterTRoutes(clientCt, apiSvr.Router)
+	// Register new t routes from grpc-gateway.
+	autht.RegisterGRPCGatewayRoutes(clientCt, apiSvr.GRPCGatewayRouter)
 	// Register new tendermint queries routes from grpc-gateway.
-	tmservice.RegisterGRPCGatewayRoutes(clientCtx, apiSvr.GRPCGatewayRouter)
+	tmservice.RegisterGRPCGatewayRoutes(clientCt, apiSvr.GRPCGatewayRouter)
 
 	// Register legacy and grpc-gateway routes for all modules.
-	ModuleBasics.RegisterRESTRoutes(clientCtx, apiSvr.Router)
-	ModuleBasics.RegisterGRPCGatewayRoutes(clientCtx, apiSvr.GRPCGatewayRouter)
+	ModuleBasics.RegisterRESTRoutes(clientCt, apiSvr.Router)
+	ModuleBasics.RegisterGRPCGatewayRoutes(clientCt, apiSvr.GRPCGatewayRouter)
 
 	// register app's OpenAPI routes.
 	apiSvr.Router.Handle("/static/openapi.yml", http.FileServer(http.FS(docs.Docs)))
 	apiSvr.Router.HandleFunc("/", openapiconsole.Handler(Name, "/static/openapi.yml"))
 }
 
-// RegisterTxService implements the Application.RegisterTxService method.
-func (app *App) RegisterTxService(clientCtx client.Context) {
-	authtx.RegisterTxService(app.BaseApp.GRPCQueryRouter(), clientCtx, app.BaseApp.Simulate, app.interfaceRegistry)
+// RegisterTService implements the Application.RegisterTService method.
+func (app *App) RegisterTService(clientCt client.Contet) {
+	autht.RegisterTService(app.BaseApp.GRPCQueryRouter(), clientCt, app.BaseApp.Simulate, app.interfaceRegistry)
 }
 
 // RegisterTendermintService implements the Application.RegisterTendermintService method.
-func (app *App) RegisterTendermintService(clientCtx client.Context) {
-	tmservice.RegisterTendermintService(app.BaseApp.GRPCQueryRouter(), clientCtx, app.interfaceRegistry)
+func (app *App) RegisterTendermintService(clientCt client.Contet) {
+	tmservice.RegisterTendermintService(app.BaseApp.GRPCQueryRouter(), clientCt, app.interfaceRegistry)
 }
 
 // GetMaccPerms returns a copy of the module account permissions

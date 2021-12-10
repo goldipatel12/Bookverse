@@ -2,9 +2,9 @@ package types
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	ibcexported "github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	capabilitytypes "github.com/cosmos/cosmos-sdkcoreFunccapability/types"
+	channeltypes "github.com/cosmos/cosmos-sdkcoreFuncibc/core/04-channel/types"
+	ibcexported "github.com/cosmos/cosmos-sdkcoreFuncibc/core/exported"
 )
 
 // ChannelKeeper defines the expected IBC channel keeper

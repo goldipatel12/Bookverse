@@ -58,7 +58,7 @@ Example 2: Pack and unpack a message in Java.
 The pack methods provided by protobuf library will by default use
 'type.googleapis.com/full.type.name' as the type URL and the unpack
 methods only use the fully qualified type name after the last '/'
-in the type URL, for example "foo.bar.com/x/y.z" will yield type
+in the type URL, for example "foo.bar.comcoreFuncy.z" will yield type
 name "y.z".
 
 
@@ -198,7 +198,7 @@ export interface V1ConsensusStateWithHeight {
    * The pack methods provided by protobuf library will by default use
    * 'type.googleapis.com/full.type.name' as the type URL and the unpack
    * methods only use the fully qualified type name after the last '/'
-   * in the type URL, for example "foo.bar.com/x/y.z" will yield type
+   * in the type URL, for example "foo.bar.comcoreFuncy.z" will yield type
    * name "y.z".
    *
    *
@@ -304,7 +304,7 @@ export interface V1IdentifiedClientState {
    * The pack methods provided by protobuf library will by default use
    * 'type.googleapis.com/full.type.name' as the type URL and the unpack
    * methods only use the fully qualified type name after the last '/'
-   * in the type URL, for example "foo.bar.com/x/y.z" will yield type
+   * in the type URL, for example "foo.bar.comcoreFuncy.z" will yield type
    * name "y.z".
    *
    *
@@ -430,7 +430,7 @@ export interface V1QueryClientStateResponse {
    * The pack methods provided by protobuf library will by default use
    * 'type.googleapis.com/full.type.name' as the type URL and the unpack
    * methods only use the fully qualified type name after the last '/'
-   * in the type URL, for example "foo.bar.com/x/y.z" will yield type
+   * in the type URL, for example "foo.bar.comcoreFuncy.z" will yield type
    * name "y.z".
    *
    *
@@ -547,7 +547,7 @@ export interface V1QueryConsensusStateResponse {
    * The pack methods provided by protobuf library will by default use
    * 'type.googleapis.com/full.type.name' as the type URL and the unpack
    * methods only use the fully qualified type name after the last '/'
-   * in the type URL, for example "foo.bar.com/x/y.z" will yield type
+   * in the type URL, for example "foo.bar.comcoreFuncy.z" will yield type
    * name "y.z".
    *
    *

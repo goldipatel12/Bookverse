@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 func (k msgServer) MintBookverse(goCtx context.Context, msg *types.MsgMintBookverse) (*types.MsgMintBookverseResponse, error) {

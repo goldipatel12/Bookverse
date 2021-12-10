@@ -16,10 +16,10 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	porttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	"github.com/goldipatel12/marketplace/x/Bookverses/client/cli"
-	"github.com/goldipatel12/marketplace/x/Bookverses/keeper"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	porttypes "github.com/cosmos/cosmos-sdkcoreFuncibc/core/05-port/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/client/cli"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/keeper"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 var (

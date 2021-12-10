@@ -2,8 +2,8 @@ package Bookverses
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/goldipatel12/marketplace/x/Bookverses/keeper"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/keeper"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

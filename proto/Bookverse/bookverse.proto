@@ -1,7 +1,7 @@
 syntax = "proto3";
 package goldipatel12.marketplace.Bookverses;
 
-option go_package = "github.com/goldipatel12/marketplace/x/Bookverses/types";
+option go_package = "github.com/goldipatel12/marketplacecoreFuncBookverses/types";
 
 import "gogoproto/gogo.proto";
 

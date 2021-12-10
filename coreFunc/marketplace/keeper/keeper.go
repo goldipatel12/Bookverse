@@ -7,7 +7,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/goldipatel12/marketplace/x/marketplace/types"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/types"
 	// this line is used by starport scaffolding # ibc/keeper/import
 )
 

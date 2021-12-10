@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	clienttypes "github.com/cosmos/cosmos-sdkcoreFuncibc/core/02-client/types"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 func (k msgServer) SendIbcTransferBookverse(goCtx context.Context, msg *types.MsgSendIbcTransferBookverse) (*types.MsgSendIbcTransferBookverseResponse, error) {

@@ -16,9 +16,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/goldipatel12/marketplace/x/marketplace/client/cli"
-	"github.com/goldipatel12/marketplace/x/marketplace/keeper"
-	"github.com/goldipatel12/marketplace/x/marketplace/types"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/client/cli"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/keeper"
+	"github.com/goldipatel12/marketplacecoreFuncmarketplace/types"
 	// this line is used by starport scaffolding # ibc/module/import
 )
 

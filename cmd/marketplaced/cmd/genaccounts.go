@@ -14,11 +14,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	"github.com/cosmos/cosmos-sdk/server"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	authvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	authtypes "github.com/cosmos/cosmos-sdkcoreFuncauth/types"
+	authvesting "github.com/cosmos/cosmos-sdkcoreFuncauth/vesting/types"
+	banktypes "github.com/cosmos/cosmos-sdkcoreFuncbank/types"
+	"github.com/cosmos/cosmos-sdkcoreFuncgenutil"
+	genutiltypes "github.com/cosmos/cosmos-sdkcoreFuncgenutil/types"
 )
 
 const (

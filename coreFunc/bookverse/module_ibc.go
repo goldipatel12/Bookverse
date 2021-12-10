@@ -5,11 +5,11 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	porttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/goldipatel12/marketplace/x/Bookverses/types"
+	capabilitytypes "github.com/cosmos/cosmos-sdkcoreFunccapability/types"
+	channeltypes "github.com/cosmos/cosmos-sdkcoreFuncibc/core/04-channel/types"
+	porttypes "github.com/cosmos/cosmos-sdkcoreFuncibc/core/05-port/types"
+	host "github.com/cosmos/cosmos-sdkcoreFuncibc/core/24-host"
+	"github.com/goldipatel12/marketplacecoreFuncBookverses/types"
 )
 
 // OnChanOpenInit implements the IBCModule interface
