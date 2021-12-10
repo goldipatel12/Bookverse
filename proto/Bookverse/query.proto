@@ -1,0 +1,71 @@
+syntax = "proto3";
+package goldipatel12.marketplace.Bookverses;
+
+import "google/api/annotations.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+// this line is used by starport scaffolding # 1
+import "Bookverses/market.proto";
+import "Bookverses/Bookverse.proto";
+
+option go_package = "github.com/goldipatel12/marketplace/x/Bookverses/types";
+
+// Query defines the gRPC querier service.
+service Query {
+    // this line is used by starport scaffolding # 2
+
+	// Queries a market by id.
+	rpc Market(QueryGetMarketRequest) returns (QueryGetMarketResponse) {
+		option (google.api.http).get = "/goldipatel12/marketplace/Bookverses/market/{id}";
+	}
+
+	// Queries a list of market items.
+	rpc MarketAll(QueryAllMarketRequest) returns (QueryAllMarketResponse) {
+		option (google.api.http).get = "/goldipatel12/marketplace/Bookverses/market";
+	}
+
+
+	// Queries a Bookverse by id.
+	rpc Bookverse(QueryGetBookverseRequest) returns (QueryGetBookverseResponse) {
+		option (google.api.http).get = "/goldipatel12/marketplace/Bookverses/Bookverse/{id}";
+	}
+
+	// Queries a list of Bookverse items.
+	rpc BookverseAll(QueryAllBookverseRequest) returns (QueryAllBookverseResponse) {
+		option (google.api.http).get = "/goldipatel12/marketplace/Bookverses/Bookverse";
+	}
+
+}
+
+// this line is used by starport scaffolding # 3
+message QueryGetMarketRequest {
+	uint64 id = 1;
+}
+
+message QueryGetMarketResponse {
+	Market Market = 1;
+}
+
+message QueryAllMarketRequest {
+	cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryAllMarketResponse {
+	repeated Market Market = 1;
+	cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+message QueryGetBookverseRequest {
+	uint64 id = 1;
+}
+
+message QueryGetBookverseResponse {
+	Bookverse Bookverse = 1;
+}
+
+message QueryAllBookverseRequest {
+	cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryAllBookverseResponse {
+	repeated Bookverse Bookverse = 1;
+	cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}

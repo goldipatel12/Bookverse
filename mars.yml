@@ -1,0 +1,24 @@
+accounts:
+  - name: monster
+    coins: ["1000token", "1000000000stake"]
+  - name: ghost
+    coins: ["500token", "100000000stake"]
+validator:
+  name: monster
+  staked: "100000000stake"
+faucet:
+  host: ":4501"
+  name: ghost
+  coins: ["50token", "100000stake"]
+host:
+  rpc: "0.0.0.0:26659"
+  p2p: "0.0.0.0:26658"
+  prof: "0.0.0.0:6061"
+  grpc: "0.0.0.0:9091"
+  api: "0.0.0.0:1318"
+  frontend: "0.0.0.0:8081"
+  dev-ui: "0.0.0.0:12346"
+genesis:
+  chain_id: "mars"
+init:
+  home: "$HOME/.mars"

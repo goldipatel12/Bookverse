@@ -1,0 +1,15 @@
+syntax = "proto3";
+package goldipatel12.marketplace.Bookverses;
+
+option go_package = "github.com/goldipatel12/marketplace/x/Bookverses/types";
+
+import "gogoproto/gogo.proto";
+
+message Market {
+  string creator = 1;
+  uint64 id = 2;
+  string sID = 3; 
+  int32 price = 4; 
+  string status = 5; 
+  string seller = 6; 
+}

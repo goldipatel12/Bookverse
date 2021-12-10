@@ -1,0 +1,12 @@
+syntax = "proto3";
+package goldipatel12.marketplace.marketplace;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/goldipatel12/marketplace/x/marketplace/types";
+
+// GenesisState defines the marketplace module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+    // this line is used by starport scaffolding # ibc/genesis/proto
+}

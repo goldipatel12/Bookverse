@@ -1,0 +1,174 @@
+syntax = "proto3";
+package goldipatel12.marketplace.Bookverses;
+
+// this line is used by starport scaffolding # proto/tx/import
+import "Bookverses/market.proto";
+import "Bookverses/Bookverse.proto";
+
+option go_package = "github.com/goldipatel12/marketplace/x/Bookverses/types";
+
+// Msg defines the Msg service.
+service Msg {
+    // this line is used by starport scaffolding # proto/tx/rpc
+  rpc SendIbcTransferBookverse(MsgSendIbcTransferBookverse) returns (MsgSendIbcTransferBookverseResponse);
+  rpc ClaimBookverse(MsgClaimBookverse) returns (MsgClaimBookverseResponse);
+  rpc BuyBookverse(MsgBuyBookverse) returns (MsgBuyBookverseResponse);
+  rpc SellBookverse(MsgSellBookverse) returns (MsgSellBookverseResponse);
+  rpc CreateMarket(MsgCreateMarket) returns (MsgCreateMarketResponse);
+  rpc UpdateMarket(MsgUpdateMarket) returns (MsgUpdateMarketResponse);
+  rpc TransferBookverse(MsgTransferBookverse) returns (MsgTransferBookverseResponse);
+  rpc MintBookverse(MsgMintBookverse) returns (MsgMintBookverseResponse);
+  rpc CreateBookverse(MsgCreateBookverse) returns (MsgCreateBookverseResponse);
+  rpc UpdateBookverse(MsgUpdateBookverse) returns (MsgUpdateBookverseResponse);
+}
+
+// this line is used by starport scaffolding # proto/tx/message
+message MsgSendIbcTransferBookverse {
+  string sender = 1;
+  string port = 2;
+  string channelID = 3;
+  uint64 timeoutTimestamp = 4;
+  string sID = 5;
+  string nftStorageCID = 6;
+}
+
+message MsgSendIbcTransferBookverseResponse {
+}
+
+message MsgUnsellBookverse {
+  string creator = 1;
+  string marketId = 2;
+  string seller = 3;
+}
+
+message MsgUnsellBookverseResponse {
+}
+
+message MsgClaimBookverse {
+  string creator = 1;
+  string marketId = 2;
+  string buyer = 3;
+}
+
+message MsgClaimBookverseResponse {
+}
+
+
+
+message MsgBuyBookverse {
+  string creator = 1;
+  string marketId = 2;
+  string buyer = 3;
+}
+
+message MsgBuyBookverseResponse {
+}
+
+message MsgSellBookverse {
+  string creator = 1;
+  string sID = 2;
+  string seller = 3;
+  int32 price = 4;
+  bool onAuction = 5;
+  int32 expired = 6;
+}
+
+message MsgSellBookverseResponse {
+}
+
+message MsgCreateMarket {
+  string creator = 1;
+  string sID = 2;
+  int32 price = 3;
+  string status = 4;
+  string seller = 5;
+  bool onAuction = 6;
+  string offers = 7;
+  int32 expired = 8;
+}
+
+message MsgCreateMarketResponse {
+  uint64 id = 1;
+}
+
+message MsgUpdateMarket {
+  string creator = 1;
+  uint64 id = 2;
+  string sID = 3;
+  int32 price = 4;
+  string status = 5;
+  string seller = 6;
+  bool onAuction = 7;
+  string offers = 8;
+  int32 expired = 9;
+}
+
+message MsgUpdateMarketResponse { }
+
+message MsgDeleteMarket {
+  string creator = 1;
+  uint64 id = 2;
+}
+
+message MsgDeleteMarketResponse { }
+
+message MsgTransferBookverse {
+  string creator = 1;
+  string sender = 2;
+  string recipient = 3;
+  string sID = 4;
+  string denom = 5;
+}
+
+message MsgTransferBookverseResponse {
+}
+
+
+message MsgMintBookverse {
+  string creator = 1;
+  string sender = 2;
+  string recipient = 3;
+  string sID = 4;
+  string denom = 5;
+  string name = 6;
+  string description = 7;
+  string image = 8;
+  string tokenUri = 9;
+}
+
+message MsgMintBookverseResponse {
+}
+
+message MsgCreateBookverse {
+  string creator = 1;
+  string sID = 2;
+  string owner = 3;
+  string name = 4;
+  string description = 5;
+  string image = 6;
+  string tokenUri = 7;
+}
+
+message MsgCreateBookverseResponse {
+  uint64 id = 1;
+}
+
+message MsgUpdateBookverse {
+  string creator = 1;
+  uint64 id = 2;
+  string sID = 3;
+  string owner = 4;
+  string name = 5;
+  string description = 6;
+  string image = 7;
+  string tokenUri = 8;
+}
+
+message MsgUpdateBookverseResponse { }
+
+message MsgDeleteBookverse {
+  string creator = 1;
+  uint64 id = 2;
+}
+
+message MsgDeleteBookverseResponse { }
